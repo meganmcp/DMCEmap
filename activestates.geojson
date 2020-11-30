@@ -6,153 +6,7 @@
         "STATE_ID": "06",
         "STATE_NAME": "California",
         "STATUS": true,
-        "TEACHERS": "Demi Lager, middle school science, Trivium Public Charter School <br>"
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            [
-              -18.251925,
-              -3.494077
-            ],
-            [
-              -18.129873,
-              -3.45984
-            ],
-            [
-              -18.080811,
-              -3.587376
-            ],
-            [
-              -18.033005,
-              -3.659079
-            ],
-            [
-              -17.985187,
-              -3.730769
-            ],
-            [
-              -18.023472,
-              -3.795538
-            ],
-            [
-              -18.120597,
-              -3.796545
-            ],
-            [
-              -18.188413,
-              -3.71538
-            ],
-            [
-              -18.220179,
-              -3.604742
-            ],
-            [
-              -18.251925,
-              -3.494077
-            ]
-          ]
-        ],
-        "type": "Polygon"
-      },
-      "id": "1"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "STATE_ID": "06",
-        "STATE_NAME": "California",
-        "STATUS": true,
-        "TEACHERS": "Demi Lager, middle school science, Trivium Public Charter School <br>"
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            [
-              -18.634897,
-              -2.310458
-            ],
-            [
-              -18.533305,
-              -2.329848
-            ],
-            [
-              -18.591921,
-              -2.43493
-            ],
-            [
-              -18.826679,
-              -2.406056
-            ],
-            [
-              -19.061442,
-              -2.377135
-            ],
-            [
-              -19.197278,
-              -2.396134
-            ],
-            [
-              -19.280026,
-              -2.331179
-            ],
-            [
-              -19.320661,
-              -2.232879
-            ],
-            [
-              -19.452315,
-              -2.190458
-            ],
-            [
-              -19.511731,
-              -2.070758
-            ],
-            [
-              -19.484898,
-              -2.010453
-            ],
-            [
-              -19.32477,
-              -2.044139
-            ],
-            [
-              -19.261103,
-              -2.155285
-            ],
-            [
-              -19.067954,
-              -2.174485
-            ],
-            [
-              -18.985175,
-              -2.151922
-            ],
-            [
-              -18.781767,
-              -2.2649
-            ],
-            [
-              -18.701233,
-              -2.246254
-            ],
-            [
-              -18.634897,
-              -2.310458
-            ]
-          ]
-        ],
-        "type": "Polygon"
-      },
-      "id": "2"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "STATE_ID": "06",
-        "STATE_NAME": "California",
-        "STATUS": true,
-        "TEACHERS": "Demi Lager, middle school science, Trivium Public Charter School <br>"
+        "TEACHERS": "Demi Lager*, middle school science, Trivium Public Charter School <br>"
       },
       "geometry": {
         "coordinates": [
@@ -909,62 +763,14 @@
       },
       "id": "4"
     },
-    {
-      "type": "Feature",
-      "properties": {
-        "STATE_ID": "06",
-        "STATE_NAME": "California",
-        "STATUS": true,
-        "TEACHERS": "Demi Lager, middle school science, Trivium Public Charter School <br>"
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            [
-              -18.13571,
-              -3.062868
-            ],
-            [
-              -18.011462,
-              -3.015438
-            ],
-            [
-              -17.890206,
-              -3.113145
-            ],
-            [
-              -17.834374,
-              -3.22416
-            ],
-            [
-              -17.915715,
-              -3.331136
-            ],
-            [
-              -18.05773,
-              -3.246919
-            ],
-            [
-              -18.066514,
-              -3.158347
-            ],
-            [
-              -18.13571,
-              -3.062868
-            ]
-          ]
-        ],
-        "type": "Polygon"
-      },
-      "id": "5"
-    },
+    
     {
       "type": "Feature",
       "properties": {
         "STATE_ID": "20",
         "STATE_NAME": "Kansas",
         "STATUS": true,
-        "TEACHERS": "Joanna Schindel, high school ELA, Washington High School<br>"
+        "TEACHERS": "Joanna Schindel*, high school ELA, Washington High School<br>"
       },
       "geometry": {
         "coordinates": [
@@ -1255,66 +1061,14 @@
       },
       "id": "6"
     },
-    {
-      "type": "Feature",
-      "properties": {
-        "STATE_ID": "12",
-        "STATE_NAME": "Florida",
-        "STATUS": true,
-        "TEACHERS": "<b>Montenique Woodard, middle school science, Shields Middle School</b><br>"
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            [
-              12.418219,
-              -13.184603
-            ],
-            [
-              12.450346,
-              -13.128291
-            ],
-            [
-              12.482458,
-              -13.071953
-            ],
-            [
-              12.546581,
-              -13.087469
-            ],
-            [
-              12.610711,
-              -13.102967
-            ],
-            [
-              12.579341,
-              -13.151434
-            ],
-            [
-              12.547958,
-              -13.199882
-            ],
-            [
-              12.483086,
-              -13.192251
-            ],
-            [
-              12.418219,
-              -13.184603
-            ]
-          ]
-        ],
-        "type": "Polygon"
-      },
-      "id": "7"
-    },
+    
     {
       "type": "Feature",
       "properties": {
         "STATE_ID": "51",
         "STATE_NAME": "Virginia",
         "STATUS": true,
-        "TEACHERS": "Moira Mazzi, high school science, West Potomac High School <br> <br> Michael Carr, high school math, West Potomac High School <br> <br> Bernadette DeSario, high school social studies, T.C. Williams High School <br> <br> Nora Barnett, middle school math, Patrick Henry K-8 School<br>"
+        "TEACHERS": "Moira Mazzi*, high school science, West Potomac High School <br> <br> Michael Carr*, high school math, West Potomac High School <br> <br> Bernadette DeSario*, high school social studies, T.C. Williams High School <br> <br> Nora Barnett*, middle school math, Patrick Henry K-8 School<br>"
       },
       "geometry": {
         "coordinates": [
@@ -1815,7 +1569,7 @@
         "STATE_ID": "06",
         "STATE_NAME": "California",
         "STATUS": true,
-        "TEACHERS": "Demi Lager, middle school science, Trivium Public Charter School <br>"
+        "TEACHERS": "Demi Lager*, middle school science, Trivium Public Charter School <br>"
       },
       "geometry": {
         "coordinates": [
@@ -1853,386 +1607,10 @@
     {
       "type": "Feature",
       "properties": {
-        "STATE_ID": "54",
-        "STATE_NAME": "West Virginia",
-        "STATUS": false
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            [
-              12.058919,
-              2.900552
-            ],
-            [
-              12.066795,
-              2.852228
-            ],
-            [
-              12.170232,
-              2.223432
-            ],
-            [
-              12.208804,
-              1.987938
-            ],
-            [
-              12.404627,
-              2.021192
-            ],
-            [
-              12.600456,
-              2.054402
-            ],
-            [
-              12.796293,
-              2.087569
-            ],
-            [
-              12.992138,
-              2.120692
-            ],
-            [
-              13.074386,
-              1.607379
-            ],
-            [
-              13.163389,
-              1.703835
-            ],
-            [
-              13.252402,
-              1.800274
-            ],
-            [
-              13.325862,
-              1.925256
-            ],
-            [
-              13.432743,
-              1.911426
-            ],
-            [
-              13.523188,
-              2.097492
-            ],
-            [
-              13.642796,
-              2.046639
-            ],
-            [
-              13.782528,
-              2.053362
-            ],
-            [
-              13.821147,
-              2.163812
-            ],
-            [
-              13.9185,
-              2.184571
-            ],
-            [
-              13.975053,
-              2.274104
-            ],
-            [
-              14.097511,
-              2.229604
-            ],
-            [
-              14.219965,
-              2.185085
-            ],
-            [
-              14.360138,
-              2.035392
-            ],
-            [
-              14.38597,
-              1.968469
-            ],
-            [
-              14.340346,
-              1.765554
-            ],
-            [
-              14.226942,
-              1.829599
-            ],
-            [
-              14.113535,
-              1.893629
-            ],
-            [
-              14.000123,
-              1.957642
-            ],
-            [
-              13.886705,
-              2.021639
-            ],
-            [
-              13.912628,
-              1.911123
-            ],
-            [
-              13.870997,
-              1.804664
-            ],
-            [
-              13.899371,
-              1.717783
-            ],
-            [
-              13.817121,
-              1.578107
-            ],
-            [
-              13.734884,
-              1.438409
-            ],
-            [
-              13.660727,
-              1.383536
-            ],
-            [
-              13.621171,
-              1.251021
-            ],
-            [
-              13.510769,
-              1.320344
-            ],
-            [
-              13.40972,
-              0.935806
-            ],
-            [
-              13.346075,
-              0.841517
-            ],
-            [
-              13.188151,
-              0.901528
-            ],
-            [
-              13.057945,
-              0.974938
-            ],
-            [
-              13.054571,
-              0.810394
-            ],
-            [
-              13.006643,
-              0.635296
-            ],
-            [
-              12.923014,
-              0.536633
-            ],
-            [
-              12.884901,
-              0.329677
-            ],
-            [
-              12.786449,
-              0.194646
-            ],
-            [
-              12.713683,
-              -0.00532
-            ],
-            [
-              12.758451,
-              -0.096335
-            ],
-            [
-              12.741277,
-              -0.188475
-            ],
-            [
-              12.61904,
-              -0.296046
-            ],
-            [
-              12.551481,
-              -0.255372
-            ],
-            [
-              12.306449,
-              -0.45733
-            ],
-            [
-              12.066461,
-              -0.577246
-            ],
-            [
-              11.943278,
-              -0.490996
-            ],
-            [
-              11.808826,
-              -0.646068
-            ],
-            [
-              11.718445,
-              -0.665056
-            ],
-            [
-              11.568804,
-              -0.599614
-            ],
-            [
-              11.429271,
-              -0.427476
-            ],
-            [
-              11.442398,
-              -0.362948
-            ],
-            [
-              11.31108,
-              -0.366436
-            ],
-            [
-              11.162432,
-              -0.258334
-            ],
-            [
-              11.117045,
-              -0.15757
-            ],
-            [
-              10.970837,
-              -0.028527
-            ],
-            [
-              10.915041,
-              0.101726
-            ],
-            [
-              10.837913,
-              0.161559
-            ],
-            [
-              10.867817,
-              0.294821
-            ],
-            [
-              10.83086,
-              0.450003
-            ],
-            [
-              11.033854,
-              0.507173
-            ],
-            [
-              11.038964,
-              0.636573
-            ],
-            [
-              11.123563,
-              0.704319
-            ],
-            [
-              11.0652,
-              0.865166
-            ],
-            [
-              11.114253,
-              0.919489
-            ],
-            [
-              11.135823,
-              1.058782
-            ],
-            [
-              11.191944,
-              1.122284
-            ],
-            [
-              11.329915,
-              1.040186
-            ],
-            [
-              11.378381,
-              1.134658
-            ],
-            [
-              11.359533,
-              1.298616
-            ],
-            [
-              11.400789,
-              1.400303
-            ],
-            [
-              11.55182,
-              1.564496
-            ],
-            [
-              11.645617,
-              1.51519
-            ],
-            [
-              11.732931,
-              1.569056
-            ],
-            [
-              11.856159,
-              1.758477
-            ],
-            [
-              11.953285,
-              1.843553
-            ],
-            [
-              11.938187,
-              1.986619
-            ],
-            [
-              12.002498,
-              2.209166
-            ],
-            [
-              11.98696,
-              2.3183
-            ],
-            [
-              12.019032,
-              2.444864
-            ],
-            [
-              12.051115,
-              2.571403
-            ],
-            [
-              12.024798,
-              2.735494
-            ],
-            [
-              11.959123,
-              2.834741
-            ],
-            [
-              12.058919,
-              2.900552
-            ]
-          ]
-        ],
-        "type": "Polygon"
-      },
-      "id": "10"
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "STATE_ID": "12",
         "STATE_NAME": "Florida",
         "STATUS": true,
-        "TEACHERS": "<b>Montenique Woodard, middle school science, Shields Middle School</b><br>"
+        "TEACHERS": "Montenique Woodard*, middle school science, Shields Middle School<br>"
       },
       "geometry": {
         "coordinates": [
@@ -3305,7 +2683,7 @@
         "STATE_ID": "53",
         "STATE_NAME": "Washington",
         "STATUS": true,
-        "TEACHERS": "Toni Rose Deanon, instructional coach, The Overlake School <br>"
+        "TEACHERS": "Toni Rose Deanon*, instructional coach, The Overlake School <br>"
       },
       "geometry": {
         "coordinates": [
@@ -4034,7 +3412,7 @@
         "STATE_ID": "37",
         "STATE_NAME": "North Carolina",
         "STATUS": true,
-        "TEACHERS": "Tavia Clemendor, high school science, Reidsville High School <br>"
+        "TEACHERS": "Tavia Clemendor*, high school science, Reidsville High School <br>"
       },
       "geometry": {
         "coordinates": [
@@ -4407,7 +3785,7 @@
         "STATE_ID": "42",
         "STATE_NAME": "Pennsylvania",
         "STATUS": true,
-        "TEACHERS": "Cheyenne Dickson, elementary, Myers Elementary School <br> <br>Deanna Trexler, middle school ELA, Bellwood-Antis Middle School <br> <br> Susan Bouslough, elementary, Myers Elementary School<br>"
+        "TEACHERS": "Cheyenne Dickson*, elementary, Myers Elementary School <br> <br>Deanna Trexler*, middle school ELA, Bellwood-Antis Middle School <br> <br> Susan Bouslough*, elementary, Myers Elementary School<br>"
       },
       "geometry": {
         "coordinates": [
@@ -4788,7 +4166,7 @@
         "STATE_ID": "11",
         "STATE_NAME": "District of Columbia",
         "STATUS": true,
-        "TEACHERS": "Emily Culp, middle school ELA, DC International School <br> <br> Bethany Blackwood, high school math, DC International School <br> <br> Wesley McCammon, high school science, Eastern High School <br>"
+        "TEACHERS": "Emily Culp*, middle school ELA, DC International School <br> <br> Bethany Blackwood*, high school math, DC International School <br> <br> Wesley McCammon*, high school science, Eastern High School <br>"
       },
       "geometry": {
         "coordinates": [
@@ -4910,43 +4288,6 @@
         "type": "Polygon"
       },
       "id": "15"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "STATE_ID": "06",
-        "STATE_NAME": "California",
-        "STATUS": true,
-        "TEACHERS": "Demi Lager, middle school science, Trivium Public Charter School <br>"
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            [
-              -20.520077,
-              2.064638
-            ],
-            [
-              -20.462139,
-              2.118315
-            ],
-            [
-              -20.380613,
-              2.032231
-            ],
-            [
-              -20.425855,
-              1.915064
-            ],
-            [
-              -20.520077,
-              2.064638
-            ]
-          ]
-        ],
-        "type": "Polygon"
-      },
-      "id": "16"
     }
   ],
   "type": "FeatureCollection"
