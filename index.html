@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8' />
+    <title>MCP Map</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&family=Lora&display=swap" rel="stylesheet">
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      
+      #map {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+      }
+
+
+      h2 {
+        font-family: 'Barlow Semi Condensed', sans-serif;
+        color: #1e97a0;
+      }
+
+      p, ul, li {
+        font-family: 'Lora', serif;
+      }
+
+      p{
+        padding: 5px;
+      }
+
+      a {
+        font-family: 'Lora', serif;
+        color: #0a5395;
+      }
+
+  
+      
+    </style>
+  </head>
+  <body>
+    <div id='map'></div>
+   
+    <script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoibWptMjIzMCIsImEiOiJja2V1Y2U2NXMwMXEwMnFrMGJzZHAwanUwIn0.M_rQQNZEq5EYocY1RBIVMA'; // replace this with your access token
+    
+
+    if (window.matchMedia( "(min-width: 400px)" ).matches){
+      var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mjm2230/ckhr17ojp1i9d19mvxh43e6sr', // replace this with your style URL
+        zoom: 4,
+        maxZoom: 8,
+        minZoom: 4
+      }); //set map zoom level for desktop size
+    } else {
+      var map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/mjm2230/ckhr17ojp1i9d19mvxh43e6sr', // replace this with your style URL
+      zoom: 2,
+      interactive: false
+    }); //set map zoom level for mobile size
+    }; 
+    
+    var hoveredActiveStateId = null;
+    var clickedActiveStateId = null;
+    var hoveredInactiveStateId = null;
+    var clickedInactiveStateId = null;
+
+    map.on('load', function () {
+      map.addSource('activestates', {
+         "type": 'geojson',
+         "data" : '/activestates.geojson', 
+
+      });
+
+      map.addSource('inactivestates', {
+         "type": 'geojson',
+         "data" : '/inactivestates.geojson'
+      });
+
+  
+      map.addLayer({
+      'id': 'active-state-hovers',
+      'type': 'fill',
+      'source' : 'activestates',
+      'layout': {},
+      'paint': {
+      'fill-color': '#1e97a0',
+      'fill-opacity': [
+      'case',
+      ['boolean', ['feature-state', 'hover'], false],
+      1,
+      0.5
+      ]
+    }
+    });
+    
+    map.addLayer({
+      'id': 'active-state-fills',
+      'type': 'fill',
+      'source' : 'activestates',
+      'layout': {
+    
+      },
+      'paint': {
+      'fill-color': [
+      'case',
+      ['boolean', ['feature-state', 'click'], false],
+      '#1e97a0',
+      '#f8f8f6'
+      ]
+    }
+
+     });
+
+     map.addLayer({
+      'id': 'active-state-labels',
+      'type': 'symbol',
+      'source' : 'activestates',
+      'layout': {
+        'text-field': ['get', 'LABEL'],
+        'text-font': ['Open Sans Semibold', 'Arial Unicode MS Bold'],        
+      },
+      'paint':{
+        'text-color': '#f8f8f6'
+      }
+    
+
+  });
+
+  map.addLayer({
+      'id': 'inactive-state-hovers',
+      'type': 'fill',
+      'source' : 'inactivestates',
+      'layout': {},
+      'paint': {
+      'fill-color': '#394752',
+      'fill-opacity': [
+      'case',
+      ['boolean', ['feature-state', 'hover'], false],
+      1,
+      0.5
+      ]
+    }
+    });
+    
+    map.addLayer({
+      'id': 'inactive-state-fills',
+      'type': 'fill',
+      'source' : 'inactivestates',
+      'layout': {},
+      'paint': {
+      'fill-color': [
+      'case',
+      ['boolean', ['feature-state', 'click'], false],
+      '#394752',
+      '#f8f8f6'
+      ]
+    }
+
+  });
+
+    map.moveLayer('active-state-fills', 'active-state-hovers')
+    map.moveLayer('state-boundaries', 'active-state-hovers')
+    map.moveLayer('inactive-state-fills', 'inactive-state-hovers')
+    map.moveLayer('state-boundaries', 'inactive-state-hovers')
+  
+
+   
+
+    map.on('mousemove', 'active-state-hovers', function (e) {
+    if (e.features.length > 0) {
+        if (hoveredActiveStateId) {
+          map.setFeatureState(
+          { source: 'activestates',id: hoveredActiveStateId },
+          { hover: false }
+          );
+          
+        }
+        hoveredActiveStateId = e.features[0].id;
+        map.setFeatureState(
+          { source: 'activestates', id: hoveredActiveStateId },
+          { hover: true }
+        );
+      }
+    });
+
+    map.on('mouseleave', 'active-state-hovers', function () {
+      if (hoveredActiveStateId) {
+        map.setFeatureState(
+          { source: 'activestates',id: hoveredActiveStateId },
+          { hover: false }
+        );
+      }
+      hoveredActiveStateId = null;
+    });
+  
+
+     map.on('mousemove', 'inactive-state-hovers', function (e) {
+    if (e.features.length > 0) {
+        if (hoveredInactiveStateId) {
+          map.setFeatureState(
+          { source: 'inactivestates',id: hoveredInactiveStateId },
+          { hover: false }
+          );
+          
+        }
+        hoveredInactiveStateId = e.features[0].id;
+        map.setFeatureState(
+          { source: 'inactivestates', id: hoveredInactiveStateId },
+          { hover: true }
+        );
+      }
+    });
+
+    map.on('mouseleave', 'inactive-state-hovers', function () {
+      if (hoveredInactiveStateId) {
+        map.setFeatureState(
+          { source: 'inactivestates',id: hoveredInactiveStateId },
+          { hover: false }
+        );
+      }
+      hoveredInactiveStateId = null;
+    });
+  }); 
+
+    map.on('click', function(e) {
+      var features = map.queryRenderedFeatures(e.point, {
+        layers: ['active-state-fills'] // replace this with the name of the layer
+        
+      });
+      if (!features.length) {
+        return;
+      }
+
+      var feature = features[0];
+      console.log(feature.properties.TEACHERS);
+
+      if (features[0].properties.TEACHERS != null){
+        var popup = new mapboxgl.Popup({ offset: [0, -15] })
+            .setLngLat(e.lngLat)
+            .setHTML('<h2> Distinguished Modern Classroom Educators in '+features[0].properties.STATE_NAME + '</h2>' + '<p>'+features[0].properties.TEACHERS+'<br><a href="https://modernclassrooms.org/distinguished-educators" target="_blank">Become a DMCE.</a></p>')
+            .addTo(map);
+            
+      };
+
+
+        if (features[0].properties.STATUS == true ) {
+            if (clickedActiveStateId) {
+                map.setFeatureState(
+                    { source: 'activestates', id: clickedActiveStateId },
+                    { click: false }
+                );
+            }
+            clickedActiveStateId = features[0].id;
+            map.setFeatureState(
+                { source: 'activestates', id: clickedActiveStateId },
+                { click: true }
+            );
+        
+        }
+
+
+    });
+
+map.on('click', function(e) {
+      var features = map.queryRenderedFeatures(e.point, {
+        layers: ['inactive-state-fills'] // replace this with the name of the layer
+        
+      });
+      if (!features.length) {
+        return;
+      }
+
+      var feature = features[0];
+
+      if (features[0].properties.TEACHERS == null){
+        var popup = new mapboxgl.Popup({ offset: [0, -15] })
+            .setLngLat(e.lngLat)
+            .setHTML('<h2> Distinguished Modern Classroom Educators in '+features[0].properties.STATE_NAME + '</h2>' + '<p> None yet! <a href="https://modernclassrooms.org/distinguished-educators" target="_blank">Become the first!</a></p>')
+            .addTo(map);
+            
+      };
+
+        if (features[0].properties.STATUS == false ) {
+            if (clickedInactiveStateId) {
+                map.setFeatureState(
+                    { source: 'inactivestates', id: clickedInactiveStateId },
+                    { click: false }
+                );
+            }
+            clickedInactiveStateId = features[0].id;
+            map.setFeatureState(
+                { source: 'inactivestates', id: clickedInactiveStateId },
+                { click: true }
+            );
+        }
+
+
+    });
+    </script>
+  </body>
+</html>
