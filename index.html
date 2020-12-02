@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset='utf-8' />
-    <title>Distinguished Modern Classroom Educator Map</title>
+    <title>Distinguished Modern Classroom Educators Map</title>
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
@@ -39,6 +39,13 @@
         color: #0a5395;
       }
 
+      .popups{
+        height: 250px;
+        overflow-y: auto;
+        
+      }
+
+
   
       
     </style>
@@ -55,8 +62,8 @@
         container: 'map',
         style: 'mapbox://styles/mjm2230/ckhr17ojp1i9d19mvxh43e6sr', // replace this with your style URL
         zoom: 4,
-        maxZoom: 8,
-        minZoom: 4
+        interactive: false
+        
       }); //set map zoom level for desktop size
     } else {
       var map = new mapboxgl.Map({
@@ -75,13 +82,13 @@
     map.on('load', function () {
       map.addSource('activestates', {
          "type": 'geojson',
-         "data" : 'activestates.geojson', 
+         "data" : '/activestates.geojson', 
 
       });
 
       map.addSource('inactivestates', {
          "type": 'geojson',
-         "data" : 'inactivestates.geojson'
+         "data" : '/inactivestates.geojson'
       });
 
   
@@ -125,10 +132,12 @@
       'source' : 'activestates',
       'layout': {
         'text-field': ['get', 'LABEL'],
-        'text-font': ['Open Sans Semibold', 'Arial Unicode MS Bold'],        
+        'text-font': ['Open Sans Semibold', 'Arial Unicode MS Bold'],  
+        'text-size' :12  
       },
       'paint':{
-        'text-color': '#f8f8f6'
+        'text-color': '#f8f8f6',
+        
       }
     
 
@@ -243,7 +252,7 @@
       console.log(feature.properties.TEACHERS);
 
       if (features[0].properties.TEACHERS != null){
-        var popup = new mapboxgl.Popup({ offset: [0, -15] })
+        var popup = new mapboxgl.Popup({ offset: [0, -15], className:'popups' })
             .setLngLat(e.lngLat)
             .setHTML('<h2> Distinguished Modern Classroom Educators in '+features[0].properties.STATE_NAME + '</h2>' + '<p>'+features[0].properties.TEACHERS+'<br><a href="https://modernclassrooms.org/distinguished-educators" target="_blank">Become a DMCE.</a></p>')
             .addTo(map);
@@ -284,8 +293,9 @@ map.on('click', function(e) {
         var popup = new mapboxgl.Popup({ offset: [0, -15] })
             .setLngLat(e.lngLat)
             .setHTML('<h2> Distinguished Modern Classroom Educators in '+features[0].properties.STATE_NAME + '</h2>' + '<p> None yet! <a href="https://modernclassrooms.org/distinguished-educators" target="_blank">Become the first!</a></p>')
-            .addTo(map);
             
+            .addTo(map);
+        popup.scrollTop      
       };
 
         if (features[0].properties.STATUS == false ) {
