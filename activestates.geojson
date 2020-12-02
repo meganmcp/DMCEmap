@@ -1068,7 +1068,7 @@
         "STATE_ID": "51",
         "STATE_NAME": "Virginia",
         "STATUS": true,
-        "TEACHERS": "Moira Mazzi*, high school science, West Potomac High School <br> <br> Michael Carr*, high school math, West Potomac High School <br> <br> Bernadette DeSario*, high school social studies, T.C. Williams High School <br> <br> Nora Barnett*, middle school math, Patrick Henry K-8 School<br>"
+        "TEACHERS": "Moira Mazzi*, high school science, West Potomac High School <br> <br> Michael Carr*, high school math, West Potomac High School <br> <br> Bernadette DeSario*, high school social studies, T.C. Williams High School <br> <br> Nora Barnett*, middle school math, Patrick Henry K-8 School<br><br> Kailey Sevel, high school, West Potomac High School<br><br>Lyndsey Reinheimer, high school math, West Potomac High School<br><br>Kara Davis, high school science, West Potomac High School<br><br>Erin Boutlier, high school special education, West Potomac High School<br><br>"
       },
       "geometry": {
         "coordinates": [
@@ -3412,7 +3412,7 @@
         "STATE_ID": "37",
         "STATE_NAME": "North Carolina",
         "STATUS": true,
-        "TEACHERS": "Tavia Clemendor*, high school science, Reidsville High School <br>"
+        "TEACHERS": "Tavia Clemendor*, high school science, Reidsville High School <br> <br> Dacia Guffey*, high school social studies, Durham Performance Learning Center <br> <br> Jennifer Jones, high school english, Reidsville High School <br>"
       },
       "geometry": {
         "coordinates": [
@@ -3785,7 +3785,7 @@
         "STATE_ID": "42",
         "STATE_NAME": "Pennsylvania",
         "STATUS": true,
-        "TEACHERS": "Cheyenne Dickson*, elementary, Myers Elementary School <br> <br>Deanna Trexler*, middle school ELA, Bellwood-Antis Middle School <br> <br> Susan Bouslough*, elementary, Myers Elementary School<br>"
+        "TEACHERS": "Cheyenne Dickson*, elementary, Myers Elementary School <br> <br>Deanna Trexler*, middle school ELA, Bellwood-Antis Middle School <br> <br> Susan Bouslough*, elementary, Myers Elementary School<br> <br> Ali Stinson*, HS math, Bellwood-Antis High School<br><br>Allura Pfizer, Kindergarten, Myers Elementary <br><br> Elise Fisher, 4th grade, Myers Elementary <br><br> Leah Frederick, 4th grade, Myers Elementary <br><br>Erin Kelley, 3rd grade, Myers Elementary School <br><br>Alison Clabaugh, 3rd grade, Myers Elementary School<br><br>Kyley L. Longo-McGarvey, Technology, Myers Elementary<br><br>"
       },
       "geometry": {
         "coordinates": [
@@ -4164,124 +4164,125 @@
       "type": "Feature",
       "properties": {
         "STATE_ID": "11",
-        "STATE_NAME": "District of Columbia",
+        "STATE_NAME": "the District of Columbia",
         "STATUS": true,
-        "TEACHERS": "Emily Culp*, middle school ELA, DC International School <br> <br> Bethany Blackwood*, high school math, DC International School <br> <br> Wesley McCammon*, high school science, Eastern High School <br>"
+        "TEACHERS": "Emily Culp*, middle school ELA, DC International School <br><br> Bethany Blackwood*, high school math, DC International School <br><br> Wesley McCammon*, high school science, Eastern High School <br><br> Stephen Sholtas*, middle school sciecne, Hardy Middle School<br><br>Bo Stearman, high school math, Columbia Heights Education Campus<br><br>Michael Moore, high school math, Eastern High School<br><br>Atinuke Doherty, middle school history, Hardy Middle School<br><br>Carita Harrison, high school science, Eastern High School<br><br>Tinika Jackson, high school science, Eastern High School<br><br>Dan Boudreaux, high school English, DC International Charter School<br><br>Ryan Steinbach, middle school math, DC International Charter School<br><br>Stephen Muskett, middle school design, DC International Charter School<br><br>Trishana Ellis, high school science, Anacostia High School", 
+        "LABEL" : "DC"
       },
       "geometry": {
         "coordinates": [
           [
             [
-              15.003449,
-              1.54599
+              20.03449,
+              1.4599
             ],
             [
-              14.998649,
-              1.571278
+              19.98649,
+              1.71278
             ],
             [
-              14.99683,
-              1.581826
+              19.9683,
+              1.81826
             ],
             [
-              14.989345,
-              1.590817
+              19.89345,
+              1.90817
             ],
             [
-              14.990337,
-              1.593694
+              19.90337,
+              1.93694
             ],
             [
-              14.9971,
-              1.597224
+              19.971,
+              1.97224
             ],
             [
-              14.962514,
-              1.643782
+              19.62514,
+              2.43782
             ],
             [
-              14.960606,
-              1.647
+              19.60606,
+              2.47
             ],
             [
-              14.928291,
-              1.660254
+              19.28291,
+              2.60254
             ],
             [
-              14.926795,
-              1.662218
+              19.26795,
+              2.62218
             ],
             [
-              14.926107,
-              1.662903
+              19.26107,
+              2.62903
             ],
             [
-              14.921513,
-              1.666199
+              19.21513,
+              2.66199
             ],
             [
-              14.921035,
-              1.666617
+              19.21035,
+              2.66617
             ],
             [
-              14.921015,
-              1.666716
+              19.21015,
+              2.66716
             ],
             [
-              14.92094,
-              1.666701
+              19.2094,
+              2.66701
             ],
             [
-              14.921015,
-              1.666716
+              19.21015,
+              2.66716
             ],
             [
-              14.92094,
-              1.666701
+              19.2094,
+              2.66701
             ],
             [
-              14.920271,
-              1.667287
+              19.20271,
+              2.67287
             ],
             [
-              14.920252,
-              1.667386
+              19.20252,
+              2.67386
             ],
             [
-              14.920271,
-              1.667287
+              19.20271,
+              2.67287
             ],
             [
-              14.920252,
-              1.667386
+              19.20252,
+              2.67386
             ],
             [
-              14.920176,
-              1.667371
+              19.20176,
+              2.67371
             ],
             [
-              14.918971,
-              1.668673
+              19.18971,
+              2.68673
             ],
             [
-              14.918513,
-              1.668992
+              19.18513,
+              2.68992
             ],
             [
-              14.913875,
-              1.674854
+              19.13875,
+              2.74854
             ],
             [
-              14.961156,
-              1.747704
+              19.61156,
+              3.47704
             ],
             [
-              15.080976,
-              1.665833
+              20.80976,
+              2.65833
             ],
             [
-              15.003449,
-              1.54599
+              20.03449,
+              1.4599
             ]
           ]
         ],
